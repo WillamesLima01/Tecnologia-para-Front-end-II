@@ -10,8 +10,3 @@ if (nota1 > 7){
     console.log ("O aluno, willames, foi reprovado!");
 
 }
-
-
-    
-
-
