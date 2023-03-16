@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">    
+    <title>Elementos Containers</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function login() {
+            var nome = pronpt("Qual o seu nome?",
+             "Militar");
+            resultado.innerHTML = "Óla, " + 
+             nome.toUpperCase() + ".";            
+        }
+    </script>
+    
+    <h1>Identificação</h1>
+    <input type="button" value="login"
+        onclick="login()">
+    <hr>
+    <div id="resultado">Óla.</div> 
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <script src="validarCampos.js"></script>
+</head>
+<body>    
+    <h1>Produto</h1>
+    <table border="0">
+        <tr>
+            <td align="right">Descrição:</td>
+            <td><input type="text" id="desc" value="" size="20"
+                maxlength="20" onblur="validarDecricao()" /></td>
+        </tr>
+        <tr>
+            <td align="right">Quantidade:</td>
+            <td><input type="text" id="qtd" value="" size="3" 
+                maxlength="3" onblur="validarQuantidade()" /></td>
+        </tr>
+        <tr>
+            <td align="right">Preço Unitário:</td>
+            <td><input type="text" id="unit" value="" size="10"
+                maxlength="10" onblur="validarPreco()" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Calcular"
+                onclick="calcular()"/></td>
+        </tr>
+        <tr>
+            <td align="right">Preço Total:</td>
+            <td><input type="text" id="total" value="" size="10" readonly /></td>            
+        </tr>
+    </table>
+</body>
+</html>
