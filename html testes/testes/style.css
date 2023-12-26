@@ -1,0 +1,235 @@
+
+/* Definindo estilos globais para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Escolhendo a fonte para o texto */
+    background-color: #b6b3b3; /* Cor de fundo do corpo da página */
+}
+
+/* Estilo para o cabeçalho principal (h1) */
+h1 {
+    margin-top: 10px; /* Margem superior para separar do conteúdo acima */
+}
+
+/* Estilo para a área do cabeçalho (#cabeca) */
+#cabeca {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #FFFF00; /* #fff Cor do texto no cabeçalho */
+    text-align: center; /* Centralizando o texto */
+    padding: 1px; /* Espaçamento interno do cabeçalho */
+    height: 30px; /* Altura do cabeçalho */
+}
+
+/* Estilo para a área abaixo do cabeçalho (#baixo) */
+#baixo {
+    background-color: #af2020; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centralizando o texto */
+    padding: 5px; /* Espaçamento interno */
+    height: 5px; /* Altura */
+    margin-top: 0px; /* Margem superior */
+}
+
+textarea {
+    width: 96%; /* Largura total */
+    padding: 8px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Margem inferior */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 18px; /* Tamanho da fonte */
+    margin-left: 5px;   
+    margin-right: 1%; 
+    margin-top: 0px;
+}
+
+/* Estilos para as áreas #divcorpo e #resenhadescritiva */
+#etapa1 {
+    width: 96%; /* Largura */
+    margin: 20px auto; /* Margens superior e inferior, alinhamento automático à esquerda/direita */
+    margin-left: 10px; /* Margem à esquerda */
+    background-color: #dbdbd6; /* Cor de fundo */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 5px 5px 10px #888888; /* Sombra */
+    display: flex; /* Usando um modelo de layout flexível */
+    flex-wrap: wrap; /* Permitindo que os elementos quebrem para a próxima linha se necessário */  
+    border: 1px solid #860404;  
+}
+
+/*-----------manipular fotos---------------------------------------*/
+#galeria, #resenhadescritiva {    
+    width: 100%; /* Largura */
+    margin: 5px auto; /* Margens superior e inferior, alinhamento automático à esquerda/direita */   
+    background-color: #dbdbd6; /* Cor de fundo */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 5px 5px 10px #888888; /* Sombra */
+    display: flex; /* Usando um modelo de layout flexível */
+    flex-wrap: wrap; /* Permitindo que os elementos quebrem para a próxima linha se necessário */
+}
+
+#etapa2 {
+    display: flex;
+    height: 50%;
+}
+
+#resenhadescritiva {
+    width: 46%;
+    margin-right: auto; /* Adicionei uma margem à direita para separar as divs */
+    margin-left: auto;
+    border: 1px solid #860404;
+}
+
+#galeria {
+    width: 46%;   
+    border: 1px solid #860404;  
+    margin-right: auto; /* Adicionei uma margem à direita para separar as divs */
+    margin-left: auto;
+}
+
+/* Estilo para grupos de entrada (.input-group) */
+.input-group {
+    width: 25%; /* Largura */
+    margin-bottom: 1px; /* Margem inferior */
+}
+
+/* Estilos para rótulos (label) */
+label {
+    color: 	blue; /* #4F4F4F Cor do texto */
+    display: block; /* Tornando os rótulos elementos de bloco */
+    margin-bottom: 3px; /* Margem inferior */
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para elementos de entrada (select, input, textarea) */
+select, input {
+    width: 90%; /* Largura total */
+    padding: 8px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Margem inferior */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    box-sizing: border-box; /* Garantindo que a largura inclua o preenchimento e a borda */
+    font-size: 18px; /* Tamanho da fonte */
+    margin-left: 10px;
+}
+
+/* Estilos quando o mouse passa sobre os elementos */
+select:hover, input:hover, textarea:hover {
+    border: 1px solid yellow; /* Borda amarela */
+}
+
+/* Estilos quando os elementos não estão sendo hover ou foco */
+select:not(:hover), input:not(:hover), textarea:not(:hover) {
+    border: 1px solid blue; /* Borda azul */
+}
+
+/* Estilos quando os elementos estão em foco */
+select:focus, input:focus, textarea:focus {
+    border: 2px solid rgb(49, 49, 230); /* Borda azul mais grossa quando em foco */
+    outline: none; /* Remover a borda padrão do navegador */
+}
+
+/* Estilos quando os elementos não estão em hover ou foco */
+select:not(:hover):not(:focus), input:not(:hover):not(:focus), textarea:not(:hover):not(:focus) {
+    border: 1px solid blue; /* Borda azul */
+}
+
+/* Estilos específicos para o textarea em foco */
+textarea:focus {
+    border: 2px solid rgb(49, 49, 230); /* Borda azul quando em foco */
+    outline: none; /* Remover a borda padrão do navegador */
+}
+
+/* Estilos para o textarea quando não está em hover ou foco */
+textarea:not(:hover):not(:focus) {
+    border: 1px solid blue; /* Borda azul */
+}
+
+/* Estilo para cada imagem */
+.imagem {
+    width: 120px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    /*object-fit: contain;  Ajusta a imagem mantendo as proporções */
+    margin: 10px; /* Margem entre as imagens */ 
+    display: block;   
+    border: 1px solid rgb(49, 49, 230);   
+    margin-left: 15px;    
+}
+
+/* Estilo para o botão de carregar fotos */
+#btnCarregar {    
+    margin-top: 40%;
+    width: 250px;
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    padding: 5px;
+    color: 	#00BFFF;
+    font-size: 16px;
+    border: 1px solid rgb(0,191,255);
+    border-radius: 5px; 
+}
+
+#btnCarregar:hover {
+    box-shadow: 0 0 10px rgba(240,255,255, 1); /* Adiciona uma sombra ao passar o mouse */
+    color: #333;
+    border: 1px solid #F0FFFF; /* Borda padrão */
+    font-weight: bold;
+    /*background-color: #808080;*/
+    border-radius: 5px; 
+    padding: 10px; /* Adicione um espaçamento interno aos botões */
+    width: 250px;
+}
+
+/* Estilo para esconder o botão de carregar */
+input[type="file"] {
+    display: none;
+}
+
+#botao {
+    display: flex;    
+    width: 88%;
+    margin-top: 10px; /* Adicione uma margem acima dos botões */
+    margin-left: 10%;
+    margin-right: 10%; /* Ajuste a margem direita para o valor desejado */
+    justify-content: space-between; /* Distribui o espaço entre os botões, ocupando todo o espaço disponível */
+    /*border: 1px solid #0a0909; Borda padrão */
+    padding: 10px; /* Espaçamento interno */
+}
+
+#botao button {
+    padding: 15px; /* Adicione um espaçamento interno aos botões */
+    width: 20%;
+    font-size: 18px;
+    border-radius: 5px; 
+    color: #FFFFE0; 
+    background-color: #808080;
+    border: 1px solid #ece6e6; /* Borda padrão */
+    transition: box-shadow 0.3s ease-in-out; /* Adiciona um efeito de transição na sombra */
+}
+
+#btnSalvar:hover {
+    box-shadow: 0 0 10px rgba(50,205,50, 0.5); /* Adiciona uma sombra ao passar o mouse */
+    color: #32CD32; 
+    border: 1px solid #32CD32; /* Borda padrão */
+    font-weight: bold;
+}
+
+#btnEditar:hover {
+    box-shadow: 0 0 10px rgba(0,0,255, 0.8); /* Efeito azul para o botão "Editar" */
+    color: #0000FF; 
+    border: 1px solid #0000FF; /* Borda padrão */
+    font-weight: bold;
+}
+
+#btnExcluir:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Efeito vermelho para o botão "Excluir" */
+    color: #ff0000; 
+    border: 1px solid #ff0000; /* Borda padrão */
+    font-weight: bold;
+}
+
+#btnLimpar:hover {
+    box-shadow: 0 0 10px rgba(255,255,0, 0.8); /* Efeito amarelo para o botão "Limpar Campos" */
+    color: #FFFF00; 
+    border: 1px solid #FFFF00; /* Borda padrão */
+    font-weight: bold;
+}

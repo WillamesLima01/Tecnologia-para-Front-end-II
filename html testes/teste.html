@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testes/style.css">
+    
+    <title>Sistema RPMont</title>
+</head>
+<body>    
+    <div id="cabeca">    
+        <h1>Cadastro</h1>
+    </div>
+
+    <div id="baixo"></div>    
+
+    <section id="etapa1">
+        <div class="input-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div class="input-group">
+            <label for="datanascimento">Data Nascimento</label>
+            <input type="date" name="datanascimento" id="datanascimento">
+        </div>
+
+        <div class="input-group">
+            <label for="pelagem">Pelagem</label>
+            <input type="text" name="pelagem" id="pelagem">
+        </div>
+
+        <div class="input-group">
+            <label for="inclusao">Inclusão</label>
+            <input type="text" name="inclusao" id="inclusao">
+        </div>
+
+        <div class="input-group">
+            <label for="registro">Registro</label>
+            <input type="text" name="registro" id="registro">
+        </div>
+
+        <div class="input-group">
+            <label for="local">Local</label>
+            <select id="local">
+                <option selected disabled value="">Selecione</option>
+                <option>RPMont</option>
+                <option>3º EPMont</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="sexo">Sexo</label>
+            <select id="sexo">
+                <option selected disabled value="">Selecione</option>
+                <option>Macho</option>
+                <option>Fêmea</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="situacao">Situação</label>
+            <select id="situacao">
+                <option selected disabled value="">Selecione</option>
+                <option>apto</option>
+                <option>inapto</option>
+                <option>morto</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="etapa2">
+        <div id="resenhadescritiva">
+            <label for="resenha">Resenha descritiva</label><br>
+            <textarea id="resenha" name="resenha" rows="7" cols="10"></textarea>
+        </div>
+        <div id="galeria">
+            <!-- Parte superior da div com duas fotos -->            
+            <span>
+                <img id="imagem1" src="imagemSilhueta/imgChanfro.jpg" alt="Foto 1" class="imagem">
+            </span>
+            <span>
+                <img id="imagem2" src="imagemSilhueta/imgLadodireito.jpg" alt="Foto 2" class="imagem">
+            </span>
+            <!-- Parte inferior da div com duas fotos -->
+            <span>
+                <img id="imagem3" src="imagemSilhueta/imgLadoEsquerdo.jpg" alt="Foto 3" class="imagem">
+            </span>
+            <span>
+                <img id="imagem4" src="imagemSilhueta/resenhadescritiva.jpg" alt="Foto 4" class="imagem">
+            </span>            
+            <!-- Botão para carregar fotos -->
+            <input type="file" id="inputFotos" accept="image/*" multiple style="display: none;">
+            <button id="btnCarregar">Carregar Fotos</button>
+        </div>     
+    </section>  
+    
+    <div id="botao">
+        <button type="button" id="btnSalvar">Salvar</button>
+        <button type="button" id="btnEditar">Editar</button>
+        <button type="button" id="btnExcluir">Excluir</button>
+        <button type="button" id="btnLimpar">Limpar</button>
+    </div>
+
+    <script src="testes/javascript.js"></script>
+    
+</body>
+</html>
